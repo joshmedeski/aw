@@ -1,0 +1,24 @@
+# journey
+background_opacity: 0.7
+colors:
+   primary:
+     background: '#18160b'
+     foreground: '#f6f1eb'
+   normal:
+     black:   '#0b0504'
+     red:     '#cc4637'
+     green:   '#9ea86c'
+     yellow:  '#daae67'
+     blue:    '#8cb3bb'
+     magenta: '#d46356'
+     cyan:    '#98bac1'
+     white:   '#fcfff2'
+   bright:
+     black:   '#150d0c'
+     red:     '#cc4637'
+     green:   '#9ea86c'
+     yellow:  '#daae67'
+     blue:    '#8cb3bb'
+     magenta: '#d46356'
+     cyan:    '#98bac1'
+     white:   '#fcfff2'

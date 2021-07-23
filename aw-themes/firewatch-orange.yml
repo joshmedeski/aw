@@ -1,0 +1,24 @@
+# firewatch-orange
+background_opacity: 0.8
+colors:
+  primary:
+    background: "#2d112a"
+    foreground: "#fffcfb"
+  normal:
+    black: "#3a2037"
+    red: "#ff7d99"
+    green: "#c6ffeb"
+    yellow: "#ffe171"
+    blue: "#b3ceff"
+    magenta: "#8beeff"
+    cyan: "#ff9a71"
+    white: "#fffcfb"
+  bright:
+    black: "#2d112a"
+    blue: "#3d82ff"
+    cyan: "#ff7e4a"
+    green: "#8bffd6"
+    magenta: "#3de3ff"
+    red: "#ff4a71"
+    white: "#ffdcc8"
+    yellow: "#ffd023"
