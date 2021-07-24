@@ -1,0 +1,24 @@
+# wandavision-tv-marvel
+background_opacity: 0.8
+colors:
+  primary:
+    background: "#190105"
+    foreground: "#D8DEE9"
+  normal:
+    black: "#3B4252"
+    red: "#BF616A"
+    green: "#A3BE8C"
+    yellow: "#EBCB8B"
+    blue: "#81A1C1"
+    magenta: "#c5263d"
+    cyan: "#951a1f"
+    white: "#E5E9F0"
+  bright:
+    black: "#4C566A"
+    red: "#BF616A"
+    green: "#A3BE8C"
+    yellow: "#EBCB8B"
+    blue: "#81A1C1"
+    magenta: "#c5263d"
+    cyan: "#951a1f"
+    white: "#ECEFF4"

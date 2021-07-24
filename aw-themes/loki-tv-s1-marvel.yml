@@ -1,0 +1,24 @@
+# loki-tv-s1-marvel
+background_opacity: 0.8
+colors:
+  primary:
+    background: "#080401"
+    foreground: "#fff6ea"
+  normal:
+    black: "#060302"
+    white: "#ffffff"
+    red: "#e62428"
+    green: "#218622"
+    yellow: "#f2dd49"
+    blue: "#78e6fc"
+    magenta: "#f87f12"
+    cyan: "#64b9ee"
+  bright:
+    black: "#080401"
+    white: "#ffffff"
+    red: "#e62428"
+    green: "#218622"
+    yellow: "#f2dd49"
+    blue: "#78e6fc"
+    magenta: "#f87f12"
+    cyan: "#64b9ee"
