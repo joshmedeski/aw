@@ -3,6 +3,8 @@ aw
 
 Alacritty and wallpaper themes
 
+⚠️ This is very early ALPHA development, feel free to create GitHub issues or star it to track new releases.
+
 Instructions for setting up and using coming soon. Message me on twitter, [@joshmedeski](https://twitter.com/joshmedeski) if you want to give feedback or help with the project.
 
 # TODO
