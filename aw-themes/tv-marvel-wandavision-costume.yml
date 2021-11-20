@@ -1,0 +1,24 @@
+# tv-marvel-wandavision-costume
+background_opacity: 0.8
+colors:
+  primary:
+    background: "#1b1412"
+    foreground: "#ffffff"
+  normal:
+    black: "#1a0f06" # Asphalt
+    red: "#ab5322"
+    green: "#A3BE8C"
+    yellow: "#EBCB8B"
+    blue: "#35416b"
+    magenta: "#a4383b"
+    cyan: "#88C0D0"
+    white: "#ffffff"
+  bright:
+    black: "#1a0f06" # Asphalt
+    red: "#ab5322"
+    green: "#A3BE8C"
+    yellow: "#EBCB8B"
+    blue: "#35416b"
+    magenta: "#a4383b"
+    cyan: "#8FBCBB"
+    white: "#ffffff"
