@@ -5,12 +5,15 @@ import wallpaper from "wallpaper";
 export default class Set extends Command {
 	static description = "sets the Alacritty theme and macOS wallpaper";
 
-	static examples = [`$ aw set nord`];
+	static examples = [
+		`$ aw set nord
+$ aw set --default nord`,
+	];
 
 	static flags = {
 		help: flags.help({ char: "h" }),
-		// TODO flag to only set alacritty colors
-		// TODO flag to only set wallpapers
+		theme: flags.boolean({ char: "t" }),
+		wallpaper: flags.boolean({ char: "w" }),
 	};
 
 	static args = [{ name: "themeName" }];
@@ -18,8 +21,9 @@ export default class Set extends Command {
 	setAlacrittyColors = async (themeName: string) => {
 		try {
 			await exec(
-				`cp ~/.config/alacritty/aw/aw-themes/${themeName}.yml ~/.config/alacritty/theme.yml`
+				`cp ~/.config/aw/aw-themes/${themeName}.yml ~/.config/alacritty/theme.yml`
 			);
+			this.log(`✅ Successfully set the ${themeName} colors`);
 		} catch (error) {
 			this.log("❌ Failed to set Alacritty colors");
 		}
@@ -27,7 +31,10 @@ export default class Set extends Command {
 
 	setWallpaper = async (themeName: string) => {
 		try {
-			await wallpaper.set(`~/.config/alacritty/aw/aw-themes/${themeName}.jpg`);
+			await wallpaper.set(
+				`/Users/joshmedeski/.config/aw/aw-themes/${themeName}.jpg`
+			);
+			this.log(`✅ Successfully set the ${themeName} wallpaper`);
 		} catch (error) {
 			this.log(error);
 			this.log("❌ Failed to set wallpaper");
@@ -35,14 +42,25 @@ export default class Set extends Command {
 	};
 
 	async run() {
-		const { args } = this.parse(Set);
+		const { args, flags } = this.parse(Set);
 		const { themeName } = args;
-		if (themeName) {
-			await this.setWallpaper(themeName);
-			this.log(`${themeName} set successfully`);
-			await this.setAlacrittyColors(themeName);
-		} else {
-			this.log("Theme name is required (ex: aw set nord)");
+		const { theme, wallpaper } = flags;
+
+		function noFlags(): boolean {
+			return !theme && !wallpaper;
+		}
+
+		try {
+			if (theme || noFlags()) {
+				await this.setAlacrittyColors(themeName);
+			}
+
+			if (wallpaper || noFlags()) {
+				await this.setWallpaper(themeName);
+			}
+		} catch (err) {
+			this.log("❌ Failed to set wallpaper");
+			this.log("Reason", err);
 		}
 	}
 }
