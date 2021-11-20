@@ -1,5 +1,11 @@
 {
-  "cSpell.words": [
-    "alacritty"
-  ]
+	"cSpell.words": [
+		"alacritty",
+		"globby",
+		"oclif",
+		"postpack",
+		"posttest",
+		"shrinkwrap",
+		"tslib"
+	]
 }

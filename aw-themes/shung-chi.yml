@@ -2,23 +2,23 @@
 background_opacity: 0.8
 colors:
   primary:
-    background: '#241c24'
-    foreground: '#ffffff'
+    background: "#241c24"
+    foreground: "#ffffff"
   normal:
-    black:   '#241c24'
-    red:     '#cf322b'
-    green:   '#84ebb6'
-    yellow:  '#eeb25a'
-    blue:    '#5593bd'
-    magenta: '#d67947'
-    cyan:    '#80ddeb'
-    white:   '#bfbfbf'
+    black: "#241c24"
+    red: "#cf322b"
+    green: "#84ebb6"
+    yellow: "#eeb25a"
+    blue: "#5593bd"
+    magenta: "#d67947"
+    cyan: "#80ddeb"
+    white: "#bfbfbf"
   bright:
-    black:   '#6d696c'
-    red:     '#ff6e67'
-    green:   '#5af78e'
-    yellow:  '#f4f99d'
-    blue:    '#5593bd'
-    magenta: '#ff92d0'
-    cyan:    '#9aedfe'
-    white:   '#e6e6e6'
+    black: "#6d696c"
+    red: "#ff6e67"
+    green: "#5af78e"
+    yellow: "#f4f99d"
+    blue: "#5593bd"
+    magenta: "#ff92d0"
+    cyan: "#9aedfe"
+    white: "#e6e6e6"

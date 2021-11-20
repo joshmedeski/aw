@@ -15,9 +15,7 @@ const readDir = async (path: string): Promise<string[]> => {
 };
 
 export const getAllFiles = async (): Promise<string[]> => {
-	const files = await readDir(
-		`/Users/joshmedeski/.config/alacritty/aw/aw-themes`
-	);
+	const files = await readDir(`~/.config/alacritty/aw/aw-themes`);
 	return files;
 };
 

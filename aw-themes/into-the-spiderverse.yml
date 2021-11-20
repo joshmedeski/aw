@@ -1,24 +1,24 @@
 # into-the-spiderverse
 background_opacity: 0.5
 colors:
-   primary:
-     background: '#050820'
-     foreground: '#D8DEE9'
-   normal:
-     black:   '#160103'
-     red:     '#fbaeb8'
-     green:   '#a6ffde'
-     yellow:  '#faf4ab'
-     blue:    '#b2ebf7'
-     magenta: '#e2bcfe'
-     cyan:    '#a9e9ff'
-     white:   '#f4f5fa'
-   bright:
-     black:   '#160103'
-     red:     '#f3394d'
-     green:   '#1a8b8a'
-     yellow:  '#eedf0c'
-     blue:    '#1ba6c6'
-     magenta: '#a441f5'
-     cyan:    '#a9e9ff'
-     white:   '#e2e5f2'
+  primary:
+    background: "#050820"
+    foreground: "#D8DEE9"
+  normal:
+    black: "#160103"
+    red: "#fbaeb8"
+    green: "#a6ffde"
+    yellow: "#faf4ab"
+    blue: "#b2ebf7"
+    magenta: "#e2bcfe"
+    cyan: "#a9e9ff"
+    white: "#f4f5fa"
+  bright:
+    black: "#160103"
+    red: "#f3394d"
+    green: "#1a8b8a"
+    yellow: "#eedf0c"
+    blue: "#1ba6c6"
+    magenta: "#a441f5"
+    cyan: "#a9e9ff"
+    white: "#e2e5f2"
