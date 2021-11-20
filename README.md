@@ -30,10 +30,12 @@ To clear the cache, it is safe to delete the cache folder entirely. **Note:** th
 
 ## Tasks
 
+- [ ] Create a sample theme with abstracted colors (ex: primary, secondary, tetriary, etc...)
+- [ ] Add command that allows you to create a new yml file
 - [ ] Get and set cache to one of the following directories based
+- [ ] Add contributing documentation (fork, clone, define, branch, code, push, pull request)
 - [ ] aw themes are set by:
   - [ ] Downloading the wallpaper image
-  - [ ] Downloading the
 - [ ] Allow flats on the set command
   - [ ] `-t` sets the theme
   - [ ] `-w` sets the wallpaper
