@@ -6,8 +6,9 @@ export default class Check extends Command {
 
 	static examples = [
 		`$ aw check
-✅ ~/.config/alacritty found
-✅ wallpaper cli found
+  ❌ wallpaper cli found
+	✅ fzf found
+  ✅ tmux found
 `,
 	];
 
@@ -35,8 +36,8 @@ export default class Check extends Command {
 	};
 
 	async run() {
-		this.log(await this.checkFile("~/.config/alacritty/alacritty.yml"));
 		this.log(await this.checkBinary("wallpaper"));
 		this.log(await this.checkBinary("tmux"));
+		this.log(await this.checkBinary("fzf"));
 	}
 }
