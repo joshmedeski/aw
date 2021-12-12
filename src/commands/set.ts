@@ -7,8 +7,11 @@ export default class Set extends Command {
 
 	static examples = [
 		`$ aw set nord
-$ aw set --default nord`,
+$ aw set -t gruvbox_dark`,
 	];
+
+	// TODO set default theme
+	// $ aw set --default nord
 
 	static flags = {
 		help: flags.help({ char: "h" }),
@@ -21,7 +24,7 @@ $ aw set --default nord`,
 	setAlacrittyColors = async (themeName: string) => {
 		try {
 			await exec(
-				`cp ~/.config/aw/aw-themes/${themeName}.yml ~/.config/alacritty/theme.yml`
+				`cp ~/.config/aw/aw-themes/${themeName}.yaml ~/.config/alacritty/theme.yml`
 			);
 			this.log(`✅ Successfully set the ${themeName} colors`);
 		} catch (error) {

@@ -1,4 +1,3 @@
-import * as util from "util";
 import * as fs from "fs";
 import * as path from "path";
 
@@ -23,6 +22,16 @@ export const printAllFiles = async (): Promise<string> => {
 	let output = "";
 	const files = await getAllFiles();
 	const fileNames = new Set(files.map((file) => path.parse(file).name));
+	fileNames.forEach((file) => (output += `${file}\n`));
+	return output;
+};
+
+export const printThemeFiles = async (): Promise<string> => {
+	let output = "";
+	const files = await getAllFiles();
+	const fileNames = files
+		.filter((file) => path.parse(file).ext === ".yaml")
+		.map((file) => path.parse(file).name);
 	fileNames.forEach((file) => (output += `${file}\n`));
 	return output;
 };
