@@ -1,0 +1,29 @@
+# Colors (HitPiece)
+background_opacity: 0
+colors:
+  # Default colors
+  primary:
+    background: "0x0E0E0E"
+    foreground: "0xD8DEE9"
+
+  # Normal colors
+  normal:
+    black: "0x000000"
+    red: "0xBF616A"
+    green: "0x78DB89"
+    yellow: "0xEBCB8B"
+    blue: "0x9DC3F8"
+    magenta: "0xC2B5F8"
+    cyan: "0xEACD4B"
+    white: "0xA3A3A3"
+
+  # Bright colors
+  bright:
+    black: "0x000000"
+    red: "0xBF616A"
+    green: "0x78DB89"
+    yellow: "0xEBCB8B"
+    blue: "0x9DC3F8"
+    magenta: "0xC2B5F8"
+    cyan: "0xEACD4B"
+    white: "0xA3A3A3"
